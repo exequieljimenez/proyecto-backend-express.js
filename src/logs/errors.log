@@ -1,0 +1,206 @@
+[2023-04-09T13:27:06.262] [ERROR] default - registro mock error
+[2023-04-09T13:32:32.710] [ERROR] default - registro mock error
+[2023-04-11T16:09:52.227] [ERROR] default - CastError: Cast to Number failed for value "orden" (type string) at path "id" for model "productos"
+    at model.Query.exec (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"orden"',
+  kind: 'Number',
+  value: 'orden',
+  path: 'id',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schema\number.js:376:12)
+      at SchemaNumber.SchemaType.applySetters (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaNumber.SchemaType._castForQuery (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaNumber.castForQuery (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schema\number.js:430:14)
+      at SchemaNumber.SchemaType.castForQueryWrapper (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\cast.js:349:32)
+      at model.Query.Query.cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:5341:12)
+      at model.Query.Query._castConditions (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:2214:10)
+      at model.Query.<anonymous> (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:2517:8) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'string'
+}
+[2023-04-11T16:11:07.382] [ERROR] default - CastError: Cast to Number failed for value "orden" (type string) at path "id" for model "productos"
+    at model.Query.exec (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"orden"',
+  kind: 'Number',
+  value: 'orden',
+  path: 'id',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schema\number.js:376:12)
+      at SchemaNumber.SchemaType.applySetters (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaNumber.SchemaType._castForQuery (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaNumber.castForQuery (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schema\number.js:430:14)
+      at SchemaNumber.SchemaType.castForQueryWrapper (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\cast.js:349:32)
+      at model.Query.Query.cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:5341:12)
+      at model.Query.Query._castConditions (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:2214:10)
+      at model.Query.<anonymous> (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:2517:8) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'string'
+}
+[2023-04-11T16:13:50.324] [ERROR] default - CastError: Cast to Number failed for value "orden" (type string) at path "id" for model "productos"
+    at model.Query.exec (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"orden"',
+  kind: 'Number',
+  value: 'orden',
+  path: 'id',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schema\number.js:376:12)
+      at SchemaNumber.SchemaType.applySetters (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaNumber.SchemaType._castForQuery (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaNumber.castForQuery (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schema\number.js:430:14)
+      at SchemaNumber.SchemaType.castForQueryWrapper (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\cast.js:349:32)
+      at model.Query.Query.cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:5341:12)
+      at model.Query.Query._castConditions (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:2214:10)
+      at model.Query.<anonymous> (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:2517:8) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'string'
+}
+[2023-04-11T16:14:41.434] [ERROR] default - CastError: Cast to Number failed for value "orden" (type string) at path "id" for model "productos"
+    at model.Query.exec (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"orden"',
+  kind: 'Number',
+  value: 'orden',
+  path: 'id',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schema\number.js:376:12)
+      at SchemaNumber.SchemaType.applySetters (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaNumber.SchemaType._castForQuery (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaNumber.castForQuery (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schema\number.js:430:14)
+      at SchemaNumber.SchemaType.castForQueryWrapper (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\cast.js:349:32)
+      at model.Query.Query.cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:5341:12)
+      at model.Query.Query._castConditions (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:2214:10)
+      at model.Query.<anonymous> (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:2517:8) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'string'
+}
+[2023-04-11T16:17:14.324] [ERROR] default - CastError: Cast to Number failed for value "orden" (type string) at path "id" for model "productos"
+    at model.Query.exec (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:4913:21)
+    at model.Query.Query.then (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:5012:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"orden"',
+  kind: 'Number',
+  value: 'orden',
+  path: 'id',
+  reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(!isNaN(val))
+  
+      at castNumber (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\cast\number.js:27:10)
+      at SchemaNumber.cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schema\number.js:376:12)
+      at SchemaNumber.SchemaType.applySetters (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaNumber.SchemaType._castForQuery (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaNumber.castForQuery (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schema\number.js:430:14)
+      at SchemaNumber.SchemaType.castForQueryWrapper (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\cast.js:349:32)
+      at model.Query.Query.cast (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:5341:12)
+      at model.Query.Query._castConditions (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:2214:10)
+      at model.Query.<anonymous> (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\tercera-entrega-8\node_modules\mongoose\lib\query.js:2517:8) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '=='
+  },
+  valueType: 'string'
+}
+[2023-06-06T15:39:56.278] [ERROR] default - Error: Invalid atomic update value for $set. Expected an object, received undefined
+    at castUpdate (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-1\node_modules\mongoose\lib\helpers\query\castUpdate.js:106:13)
+    at model.Query._castUpdate (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-1\node_modules\mongoose\lib\query.js:5126:10)
+    at model.Query._updateThunk (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-1\node_modules\mongoose\lib\query.js:4265:27)
+    at model.Query.<anonymous> (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-1\node_modules\mongoose\lib\query.js:4379:23)
+    at model.Query._wrappedThunk [as _updateOne] (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-1\node_modules\mongoose\lib\helpers\query\wrapThunk.js:29:8)
+    at C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-1\node_modules\kareem\index.js:497:25
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+[2023-06-06T21:35:28.984] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'find')
+    at ProductManagerMongo.getAll (file:///C:/Exequiel/curso-coderhouse-backend/desafios%20y%20entregas/proyecto-final-2/src/daos/manager/productos/productsManagerMongo.js:28:53)
+    at getProductos (file:///C:/Exequiel/curso-coderhouse-backend/desafios%20y%20entregas/proyecto-final-2/src/services/productos.services.js:5:40)
+    at getProductosControllers (file:///C:/Exequiel/curso-coderhouse-backend/desafios%20y%20entregas/proyecto-final-2/src/controllers/productos.controllers.js:4:27)
+    at Layer.handle [as handle_request] (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\index.js:280:10)
+[2023-06-06T21:37:41.442] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'find')
+    at ProductManagerMongo.getAll (file:///C:/Exequiel/curso-coderhouse-backend/desafios%20y%20entregas/proyecto-final-2/src/daos/manager/productos/productsManagerMongo.js:28:53)
+    at getProductos (file:///C:/Exequiel/curso-coderhouse-backend/desafios%20y%20entregas/proyecto-final-2/src/services/productos.services.js:5:40)
+    at getProductosControllers (file:///C:/Exequiel/curso-coderhouse-backend/desafios%20y%20entregas/proyecto-final-2/src/controllers/productos.controllers.js:4:27)
+    at Layer.handle [as handle_request] (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-2\node_modules\express\lib\router\index.js:280:10)
+[2023-06-06T23:27:33.091] [ERROR] default - Error: Missing credentials for "PLAIN"
+    at SMTPConnection._formatError (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-6-logica-auth\node_modules\nodemailer\lib\smtp-connection\index.js:790:19)
+    at SMTPConnection.login (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-6-logica-auth\node_modules\nodemailer\lib\smtp-connection\index.js:444:38)
+    at C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-6-logica-auth\node_modules\nodemailer\lib\smtp-transport\index.js:272:32
+    at SMTPConnection.<anonymous> (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-6-logica-auth\node_modules\nodemailer\lib\smtp-connection\index.js:213:17)
+    at Object.onceWrapper (node:events:641:28)
+    at SMTPConnection.emit (node:events:527:28)
+    at SMTPConnection._actionEHLO (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-6-logica-auth\node_modules\nodemailer\lib\smtp-connection\index.js:1331:14)
+    at SMTPConnection._processResponse (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-6-logica-auth\node_modules\nodemailer\lib\smtp-connection\index.js:953:20)
+    at SMTPConnection._onData (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-6-logica-auth\node_modules\nodemailer\lib\smtp-connection\index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\Exequiel\curso-coderhouse-backend\desafios y entregas\proyecto-final-6-logica-auth\node_modules\nodemailer\lib\smtp-connection\index.js:193:44) {
+  code: 'EAUTH',
+  command: 'API'
+}
+[2023-06-07T09:56:41.252] [ERROR] default - Hubo un error al conectarse a la base de datos
+[2023-06-07T09:56:41.268] [ERROR] default - Error en el servidor Error: listen EACCES: permission denied XXXXX
+[2023-06-07T10:23:27.918] [ERROR] default - ReferenceError: model is not defined
+    at addUser (file:///C:/Exequiel/curso-coderhouse-backend/desafios%20y%20entregas/proyecto-final-7/src/controllers/auth.controllers.js:6:26)
+    at file:///C:/Exequiel/curso-coderhouse-backend/desafios%20y%20entregas/proyecto-final-7/src/routes/routeAuth.js:101:13
