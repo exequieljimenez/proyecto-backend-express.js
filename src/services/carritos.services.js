@@ -42,6 +42,7 @@ const buyProductsInCart = async (email) => {
     const carrito = await carritoDao.getCart(email)
     const productos = carrito.productos
     const newProductsDTO = productos.map(product => new ProductDTO(product))
+    await carritoDao.borrarCarrito(email)
     return newProductsDTO
 }
 
