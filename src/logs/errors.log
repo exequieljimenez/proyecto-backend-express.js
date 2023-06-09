@@ -206,3 +206,4 @@
     at file:///C:/Exequiel/curso-coderhouse-backend/desafios%20y%20entregas/proyecto-final-7/src/routes/routeAuth.js:101:13
 [2023-06-08T22:42:18.860] [ERROR] default - There was an error with the database connection
 [2023-06-08T22:42:18.899] [ERROR] default - Server error: Error: listen EACCES: permission denied xxxx
+[2023-06-09T12:02:29.834] [ERROR] default - Server error: Error: listen EACCES: permission denied xxxx
