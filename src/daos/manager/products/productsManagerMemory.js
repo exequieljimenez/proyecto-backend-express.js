@@ -40,7 +40,20 @@ class ProductManagerMemory {
     }
 
     filtrarProductos(limit) {
-        return 'not yet'
+        const sortedProducts = this.products.sort((a, b) => {
+            if (a.nombre > b.nombre) {
+                return 1;
+            }
+            if(a.nombre < b.nombre) {
+                return -1;
+            }
+            return 0;
+        })
+        let sortedWithLimit = []
+        for(let i = 0; i < limit; i++) {
+            sortedWithLimit.push(sortedProducts[i])
+        }
+        return JSON.stringify(sortedWithLimit)
     }
 
 }
