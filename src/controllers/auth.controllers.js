@@ -60,4 +60,21 @@ const getAuthLogoutController = async (req, res) => {
     }
 }
 
-export {readUser, addUser, generateHashPassword, verifyPass, getAuthHomeController, getAuthRegisterController, getAuthLoginController, getAuthLoginSuccessController, getAuthLoginErrorController, getAuthLogoutController}
+const postAuthRegisterController = async (req, res) => {
+    const sesionActiva = req.session
+    if (sesionActiva.passport) {
+        res.send('Debe desloguearse para registrar un nuevo usuario')
+    } else {
+        const { email, password, nombre, direccion, edad, celular, avatar } = req.body;
+        const newUsuario = await readUserUservice(email)
+        if (newUsuario) {
+            res.send('Usuario ya existente')
+        } else {
+            const newUser = { email, password: await generateHashPassword(password), nombre, direccion, edad, celular, avatar }
+            addUserService(newUser)
+            res.send('usuario agregado\ningrese a login y escriba el email y contrasena con los que se registro para loguearse')
+        }
+    }
+}
+
+export {readUser, addUser, generateHashPassword, verifyPass, getAuthHomeController, getAuthRegisterController, getAuthLoginController, getAuthLoginSuccessController, getAuthLoginErrorController, getAuthLogoutController, postAuthRegisterController}

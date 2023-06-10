@@ -1,7 +1,7 @@
 import express from "express";
 import passport from "passport";
 import { Strategy } from "passport-local";
-import {addUser, readUser, verifyPass, generateHashPassword, getAuthHomeController, getAuthRegisterController, getAuthLoginController, getAuthLoginSuccessController, getAuthLoginErrorController, getAuthLogoutController} from '../controllers/auth.controllers.js'
+import {readUser, verifyPass, getAuthHomeController, getAuthRegisterController, getAuthLoginController, getAuthLoginSuccessController, getAuthLoginErrorController, getAuthLogoutController, postAuthRegisterController} from '../controllers/auth.controllers.js'
 
 const LocalStrategy = Strategy;
 
@@ -49,23 +49,6 @@ authRouter.get('/login-success', getAuthLoginSuccessController)
 authRouter.get('/login-error', getAuthLoginErrorController)
 authRouter.get('/logout', getAuthLogoutController)
 authRouter.post('/login', passport.authenticate('loginStrategy', {successRedirect: 'login-success', failureRedirect: 'login-error'}))
-
-authRouter.post('/register', async (req, res) => {
-    const sesionActiva = req.session
-    if (sesionActiva.passport) {
-        res.send('Debe desloguearse para registrar un nuevo usuario')
-    } else {
-        const { email, password, nombre, direccion, edad, celular, avatar } = req.body;
-        const newUsuario = await readUser(email)
-        if (newUsuario) {
-            res.send('Usuario ya existente')
-        } else {
-            const newUser = { email, password: await generateHashPassword(password), nombre, direccion, edad, celular, avatar }
-            addUser(newUser)
-            res.send('usuario agregado\ningrese a login y escriba el email y contrasena con los que se registro para loguearse')
-        }
-    }
-
-})
+authRouter.post('/register', postAuthRegisterController)
 
 export {authRouter};
